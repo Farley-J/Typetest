@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="game.js"></script>
+    <title>Typetest</title>
+</head>
+<body>
+    <h1>TypeTest<img src="icons8-keyboard-50.png"></h1>
+    <br>
+    <div id="game">
+        <div id ="timerContainer">
+            <span>Timer:</span><span id ="timer"></span>
+        </div>
+        <br>
+        <br>
+        <div id="text"></div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <input type="text" placeholder="Type here to start the timer" id="charInput">
+        </div>
+    </div>
+    <br>
+    
+    
+    <div id="score">
+        <table>
+            <tr>
+                <td><p class="end">wpm <p id="wpm" class="done"></p></p></td>
+            </tr>
+            <tr>
+                <td><p class="end">acc <p id="acc" class="done"></p></p></td>
+            </tr>
+        </table>
+
+ 
+        <button id="btn">Restart</button>
+    </div>
+    
+
+</body>
+</html>
