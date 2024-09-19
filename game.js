@@ -168,7 +168,7 @@ $(document).ready(function() {
         document.getElementById('timer').innerHTML= sec.toString();
         sec--;
         if (sec < 0) {
-            let wpm = calculateTypingSpeed(wordIndex+1, 60).toString();
+            let wpm = Math.round(calculateTypingSpeed(wordIndex+1, 60).toString());
             let acc = calculateAccuracy(index+1, errors).toString();
             $("#wpm").html(wpm);
             $("#acc").html(acc + "<span>%</span>");
@@ -176,7 +176,7 @@ $(document).ready(function() {
             $("#game").hide();
             clearInterval(timer);
         }else if(index === charCount){
-            let wpm = calculateTypingSpeed(wordIndex+1, 60 - sec).toString();
+            let wpm = Math.round(calculateTypingSpeed(wordIndex+1, 60 - sec).toString());
             let acc = calculateAccuracy(index+1, errors).toString();
             $("#wpm").html(wpm);
             $("#acc").html(acc + "<span>%</span>");
